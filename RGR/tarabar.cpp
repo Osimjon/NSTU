@@ -66,7 +66,6 @@ vector <int> de_tarabar(vector<int> text) {//geting vector
 			}
 		}
 	}
-
 	return de_cipher;
 }
 
@@ -88,9 +87,6 @@ int main() {
 
 	vector<int> de_show = de_tarabar(show);
 	show_vector(de_show);
-
-
-
 
 	return 0;
 }
