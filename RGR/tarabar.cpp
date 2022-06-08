@@ -78,7 +78,7 @@ void show_vector(vector<int>& a)
 // we can delete main function and use it as .h
 
 int main() {
-	// just checking the program
+	    // just checking the program
 	vector<int> a{ 98, 97, 100, 98, 111, 121 };
 	vector<int> show = tarabar(a);
 	show_vector(show);
