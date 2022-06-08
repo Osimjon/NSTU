@@ -13,7 +13,6 @@ vector<int> skitl(vector<int> myvec, int a) {
         lenth++;
     }
 
-
     vector<vector<int> > shifr(lenth, vector<int>(a, 0));
     for (vector<int>::iterator i = myvec.begin(); i != myvec.end(); i++) {
         for (int j = 0; j < lenth;j++) {
@@ -24,13 +23,11 @@ vector<int> skitl(vector<int> myvec, int a) {
         }
     }
 
-
     if (flagTail) {
         for (int i = 0; i < tail; i++) {
             shifr.at(lenth).pop_back();
         }
     }
-
 
     vector<int> cipher;
     for (int i = 0; i < cipher.size(); i++) {
@@ -45,8 +42,6 @@ vector<int> skitl(vector<int> myvec, int a) {
     return cipher;
 }
 
-
-
 vector<int> de_skitl(vector<int> myvec, int key) {
 
     bool flagTail = false;
@@ -57,7 +52,6 @@ vector<int> de_skitl(vector<int> myvec, int key) {
         tail = myvec.size() % key;
         lenth++;
     }
-
 
     vector<vector<int> > shifr(lenth, vector<int>(key, 0));
     for (vector<int>::iterator i = myvec.begin(); i != myvec.end(); i++) {
@@ -75,7 +69,6 @@ vector<int> de_skitl(vector<int> myvec, int key) {
             shifr.at(i).pop_back();
         }
     }
-
 
     vector<int> de_cipher;
     for (int i = 0; i < de_cipher.size(); i++) {
