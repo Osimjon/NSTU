@@ -4,7 +4,7 @@
 
 using namespace std;
 
-vector <int> tarabar(vector<int> text) {//geting vector
+vector <int> tarabar(vector<int> text) {          //geting vector
 	vector<int> alphabet1, alphabet2, cipher; //2 line of alphabet
 
 	int counter = 97;
