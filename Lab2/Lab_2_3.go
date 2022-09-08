@@ -1,5 +1,18 @@
 package main
 
+import (
+	"fmt"
+	"strconv"
+	"reflect"
+)
+
+func remove(n string) (result string) {
+  if len(n) > 2 {
+   
+  }
+  return result
+}
+
 func reverse(n int) int {
     new_int := 0
     for n > 0 {
@@ -12,5 +25,16 @@ func reverse(n int) int {
 }
 
 func main() {
-    print(reverse(123456))   
+    var n string
+    fmt.Scanln(&n)
+    
+    for n[0] == '0'{
+        n = n[1:len(n)]
+    }
+    
+    intn, err := strconv.Atoi(n)
+	fmt.Println(intn, err, reflect.TypeOf(n))
+    
+    print(reverse(int(intn)))
+
 }
