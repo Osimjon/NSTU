@@ -21,8 +21,7 @@ public class Main
     
     public static String reverseString(String str) {
         return new StringBuilder(str).reverse().toString();
-    }
- 
+    } 
     
 	public static void main(String[] args) {
 	    
@@ -30,15 +29,11 @@ public class Main
 	    
 	    while(str.charAt(0) == '0'){
 	        str = removefirstChar(str);
-	    };
-	    
-	    str = reverseString(str);
-	    
+	    };	    
+	    str = reverseString(str);	    
 	    while(str.charAt(0) == '0'){
 	        str = removefirstChar(str);
 	    };
-	    
 	    System.out.println(str); 
-
 	}
 }
