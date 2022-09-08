@@ -12,6 +12,5 @@ func reverse(n int) int {
 }
 
 func main() {
-    print(reverse(123456))
-    
+    print(reverse(123456))   
 }
